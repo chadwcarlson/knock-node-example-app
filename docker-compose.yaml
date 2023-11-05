@@ -6,8 +6,8 @@ services:
     ports:
       - 5432:5432
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: "1234"
+      POSTGRES_USER: johnhammond
+      POSTGRES_PASSWORD: wehaveatrex
 
       # POSTGRES_USER: johnhammond
       # POSTGRES_PASSWORD: wehaveatrex

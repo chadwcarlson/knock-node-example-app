@@ -21,15 +21,6 @@ const seed = async () => {
 
     db.user.create({
       data: {
-        name: "Ray Arnold",
-        email: "chadwcarlson@gmail.com",
-        hashedPassword,
-        role: "USER",
-      },
-    }),
-
-    db.user.create({
-      data: {
         name: "Dennys Nedry",
         email: "dnedry@ingen.net",
         hashedPassword,
