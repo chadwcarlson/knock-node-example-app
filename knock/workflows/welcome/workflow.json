@@ -1,5 +1,6 @@
 {
   "name": "Welcome",
+  "sha": "5qYCmm2n3XC/y7OCNXkTRp3s/1Q4/2KGRdE/Ch4OwIY=",
   "steps": [
     {
       "channel_key": "in-app-feed",
@@ -28,7 +29,7 @@
     "key": "welcome",
     "active": true,
     "valid": true,
-    "created_at": "2022-05-24T17:53:12.853168Z",
-    "updated_at": "2022-05-24T19:36:25.830917Z"
+    "created_at": "2023-11-02T23:45:53.311979Z",
+    "updated_at": "2023-11-02T23:45:53.324214Z"
   }
 }
