@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  db:
+    image: "postgres:latest"
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: "1234"
+
+      # POSTGRES_USER: johnhammond
+      # POSTGRES_PASSWORD: wehaveatrex
+
+      # docker run --rm -P -p 127.0.0.1:5432:5432 -e POSTGRES_PASSWORD="1234" --name pg postgres:alpine
+      # DATABASE_URL=postgresql://johnhammond:wehaveatrex@localhost:5432/postgres

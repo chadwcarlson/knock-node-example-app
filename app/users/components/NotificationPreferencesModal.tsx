@@ -32,13 +32,17 @@ const NotificationPreferencesModal = ({ user, isOpen, onClose }) => {
   const knockClient = useMemo(() => {
     const knock = new Knock(process.env.BLITZ_PUBLIC_KNOCK_CLIENT_ID!)
     knock.authenticate(user.id)
-
+    console.log(knock)
     return knock
   }, [user.id])
 
+  console.log(knockClient)
+
   useEffect(() => {
     knockClient.preferences.get().then((preferences) => {
+      console.log(preferences)
       setPreferences(preferences)
+      console.log(preferences)
     })
   }, [knockClient])
 
@@ -49,11 +53,11 @@ const NotificationPreferencesModal = ({ user, isOpen, onClose }) => {
   const preparedPreferencesWorkflows: WorkflowPreferences = {
     [NEW_COMMENT]: {
       channel_types: { email: true, in_app_feed: true },
-      ...(preferences.workflows[NEW_COMMENT] as object),
+      // ...(preferences.workflows[NEW_COMMENT] as object),
     },
     [NEW_ASSET]: {
       channel_types: { email: true, in_app_feed: true },
-      ...(preferences.workflows[NEW_ASSET] as object),
+      // ...(preferences.workflows[NEW_ASSET] as object),
     },
   }
 
